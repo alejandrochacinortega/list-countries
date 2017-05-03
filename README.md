@@ -24,7 +24,7 @@ $ yarn add list-countries
 const list = require('list-countries')
 
 // Initiate the module and preload desired country name translations.
-// Note: Init method call is optional, if not called defaults will be used.
+// Note: `init` method call is optional, if not called defaults will be used.
 list.init({
   // Fallback locale is used when you try to access a list which was not loaded yet.
   fallbackLocale: 'en',
@@ -35,10 +35,12 @@ list.init({
 
 // Load translations for multiple locales.
 // Note: Loads translations for the fallback locale automatically.
+// Note: When using `init` method, the `loadLists` method is called internally.
 list.loadLists([ 'en', 'ru', 'fr' ])
 
 // Load a specific translation.
 // Note: Does not load translations for the fallback locale automatically.
+// Note: When using `init` method, the `loadList` method is called internally.
 list.loadList('es')
 
 // Get all translations.

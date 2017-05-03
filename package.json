@@ -1,7 +1,7 @@
 {
   "name": "list-countries",
   "version": "1.0.0",
-  "description": "List of all country names and ISO 3166-1 codes translated in all languages.",
+  "description": "List all country names and ISO 3166-1 codes in all languages.",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha -R spec -u bdd"
