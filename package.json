@@ -1,0 +1,28 @@
+{
+  "name": "list-countries",
+  "version": "1.0.0",
+  "description": "List of all country names and ISO 3166-1 codes translated in all languages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -R spec -u bdd"
+  },
+  "repository": "https://github.com/103058/list-countries",
+  "author": "Ion Suman",
+  "license": "MIT",
+  "standard": {
+    "globals": [
+      "describe",
+      "beforeEach",
+      "afterEach",
+      "it"
+    ]
+  },
+  "dependencies": {
+    "debug": "^2.6.6"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0",
+    "mock-fs": "^4.3.0"
+  }
+}
