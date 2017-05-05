@@ -43,6 +43,11 @@ list.loadLists([ 'en', 'ru', 'fr' ])
 // Note: When using `init` method, the `loadList` method is called internally.
 list.loadList('es')
 
+// Check if a list was loaded.
+list.loaded('en') // true
+list.loaded('fr') // true
+list.loaded('ro') // false
+
 // Get all translations.
 list.all() // { en: [Object], ru: [Object], fr: [Object], es: [Object] }
 

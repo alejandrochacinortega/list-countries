@@ -70,6 +70,16 @@ exports.loadList = locale => {
 }
 
 /**
+ * Check if a list for the `locale` was loaded.
+ *
+ * @param  {String} locale
+ *
+ * @return {Boolean}
+ */
+
+exports.loaded = locale => lists.hasOwnProperty(locale)
+
+/**
  * Get all loaded countries lists.
  *
  * @return {Object}
