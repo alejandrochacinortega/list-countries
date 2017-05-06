@@ -77,7 +77,7 @@ exports.loadList = locale => {
  * @return {Boolean}
  */
 
-exports.loaded = locale => lists.hasOwnProperty(locale)
+exports.loaded = locale => !!lists[locale]
 
 /**
  * Get all loaded countries lists.
